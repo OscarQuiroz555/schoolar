@@ -16,8 +16,10 @@ $conn = pg_connect("
 ");
 
 if(!$conn){
-    die("Connection error: " . pq_last_error()); //Validación
+    die("Connection error: " . pg_last_error()); //Validación
 }else{
     echo "Success connection";
 }
+
+pg_close();
 ?>
