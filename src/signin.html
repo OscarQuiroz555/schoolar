@@ -20,7 +20,7 @@
       border-radius: 50%;
       margin-bottom: 30px;
     }
-
+    
     form {
       display: flex;
       flex-direction: column;
@@ -51,6 +51,21 @@
     button:hover {
       background-color: #254a91;
     }
+
+    .back-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #3366cc;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -62,6 +77,10 @@
     <input type="password" name="passw" placeholder="********" required />
     <button type="submit">Sign in</button>
   </form>
+
+  <div class="back-link">
+    <a href="../index.html">← Back to Home</a>
+  </div>
 
 </body>
 </html>
