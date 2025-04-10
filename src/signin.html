@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign in</title>
+  <style>
+    body {
+      background-color: #f0f4f8;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    img {
+      border-radius: 50%;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    input {
+      padding: 12px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #3366cc;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 150px;
+    }
+
+    button:hover {
+      background-color: #254a91;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="images/perfil (3).png" height="250" width="250" alt="User Icon" />
+  
+  <form action="login.php" method="post">
+    <input type="email" name="e_mail" placeholder="OscarQuirox@gmail.com" required />
+    <input type="password" name="passw" placeholder="********" required />
+    <button type="submit">Sign in</button>
+  </form>
+
+</body>
+</html>

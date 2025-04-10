@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Schoolar - Sign up</title>
+  <style>
+    body {
+      background-color: #f0f4f8;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      background-color: white;
+      width: 350px;
+      margin: 60px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      color: #3366cc;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 15px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #3366cc;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #254a91;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #3366cc;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Register Form</h1>
+
+    <form name="register-form" action="signup.php" method="post">
+      <input type="text" name="f_name" placeholder="Your firstname" required />
+      <input type="text" name="l_name" placeholder="Your lastname" required />
+      <input type="email" name="e_mail" placeholder="OscarQuirox@gmail.com" required />
+      <input type="password" name="passw" placeholder="********" required />
+      <button type="submit">Register</button>
+    </form>
+
+    <div class="back-link">
+      <p><a href="../index.html">← Back to Home</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
